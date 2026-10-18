@@ -1,0 +1,12 @@
+سلطان دیتابیس — راهنمای استفاده در آیفون و لپ‌تاپ
+
+۱) قبل از جایگزینی نسخه، از برنامه فعلی بکاپ بگیر: بخش «بکاپ» را بزن و فایل را ذخیره کن.
+۲) در GitHub همان مخزن قبلی را باز کن و فایل index.html را با فایل همین بسته جایگزین کن. فایل‌های manifest.json، sw.js و سه آیکون را هم کنار index.html نگه دار.
+۳) در Firebase Console → Authentication → Sign-in method، روش Google را فعال کن.
+۴) در Firebase Console → Authentication → Settings → Authorized domains، دامنه GitHub Pages خودت را اضافه کن (مثلاً USERNAME.github.io؛ بدون https:// و بدون مسیر پروژه).
+۵) در Firebase Console → Firestore Database → Rules، باید دسترسی امن برای کاربر واردشده تنظیم شده باشد. قوانین را عمومی (allow read, write: if true) نگذار.
+۶) در Google Cloud Console همان پروژه، Google Drive API را فعال کن. ورود Google در برنامه مجوز Drive را درخواست می‌کند.
+۷) برنامه را با همان لینک HTTPS در Safari آیفون و مرورگر لپ‌تاپ باز کن. در هر دو دستگاه با همان حساب Google وارد شو؛ پس از اولین ورود، دکمه «همگام‌سازی» را بزن و تأیید کن که اطلاعات درست است.
+۸) برای نصب روی آیفون: Safari → Share → Add to Home Screen.
+
+نکته مهم: این بسته ورود Google را برای Safari/iPhone با redirect سازگارتر کرده و تنظیم چاپ را برای رول ۸۰ میلی‌متری هدف گرفته است. با این حال، اتصال واقعی Firebase/Drive به تنظیمات پروژه و قوانین امنیتی آن بستگی دارد و باید با یک دیتابیس آزمایشی و بکاپ تازه آزمایش شود. همیشه قبل از نخستین همگام‌سازی، بکاپ بگیر.

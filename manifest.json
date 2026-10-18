@@ -1,0 +1,32 @@
+{
+ "name": "دفتر کهاته سلطان",
+ "short_name": "کهاته سلطان",
+ "start_url": "./index.html",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "portrait",
+ "lang": "fa",
+ "dir": "rtl",
+ "background_color": "#ede7df",
+ "theme_color": "#ff1010",
+ "icons": [
+  {
+   "src": "sultan-icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "sultan-icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "sultan-icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}
